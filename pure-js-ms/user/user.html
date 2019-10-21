@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Pure JS</title>
+        <script src="../component/datagrid/datagrid-header.js"></script>
+        <script src="../component/datagrid/datagrid-body.js"></script>
+        <script src="mock.js"></script>
+        <script src="user-model.js"></script>
+        <script src="../js/util.js"></script>
+        <script src="user.js"></script>
+    </head>
+    <body onload="initializer()">
+        <div>
+            <p>First Name: <input id = 'first_name' type = 'text'/></p>
+            <p>Last Name: <input id = 'last_name' type = 'text'/></p>
+            <p>Date Born : <input id = 'born_date' type = 'date'/></p>
+        </div>
+        <div>
+            <input value = 'Send' type = 'button' onclick="save()"/>
+            <input value = 'Search' type = 'button' onclick="find()"/>
+        </div>
+        <div>
+            <table id= 'datagrid-user' border = 1 style="width:100%">
+                
+            </table>
+        </div>
+    </body>
+</html>
