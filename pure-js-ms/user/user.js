@@ -10,9 +10,12 @@ function save(){
     data.last_name = document.getElementById("last_name").value;
     data.date_born =  document.getElementById("born_date").value;
     mock_list_user_model.push(data);
-    //clearGrid(document.getElementById("datagrid-user"))
     find()
     log(data);
+}
+
+function clearResults(){
+    clearGrid(document.getElementById("datagrid-user"))
 }
 
 function find(){

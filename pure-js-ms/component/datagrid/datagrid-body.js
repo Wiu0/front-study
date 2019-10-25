@@ -23,5 +23,12 @@ function fillGrid(datagrid, list_element){
 }
 
 function clearGrid(datagrid){
-    datagrid.remove();
+    if(datagrid.childNodes.length < 2){
+        return
+    }
+    var i = 1 
+    var size = datagrid.childNodes.length
+    for(; i <= size; i++){
+        datagrid.childNodes[2].remove()
+    }
 }
